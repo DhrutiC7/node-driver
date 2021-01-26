@@ -1,0 +1,76 @@
+{
+	"tags": {
+		"allowUnknownTags": true
+	},
+	"source": {
+		"include": ["./", "./README.md"],
+		"exclude": [
+			"knex_migrations",
+			"logs",
+			"node_modules",
+			"test"
+		],
+		"includePattern": ".+\\.js(doc)?$",
+		"excludePattern": "(docs|generated)"
+	},
+	"opts": {
+		"destination": "./jsdoc_default",
+		"encoding": "utf8",
+		"package": "./package.json",
+		"readme": "./README.md",
+		"recurse": true,
+		"verbose": true,
+		"template": "./node_modules/docdash"
+	},
+	"plugins": [
+		"plugins/markdown",
+		"plugins/summarize"
+	],
+	"templates": {
+		"cleverLinks": true,
+		"disableSort": false,
+		"monospaceLinks": false,
+		"referenceTitle": "Plant.Works Downtime Recorder",
+
+		"default": {
+			"outputSourceFiles": true,
+			"includeDate": false
+		}
+	},
+	"docdash": {
+		"collapse": true,
+		"navLevel": 2,
+		"removeQuotes": "none",
+		"search": true,
+		"sort": true,
+		"static": true,
+		"typedefs": true,
+		"wrap": false,
+
+		"meta": {
+			"title": "Plant.Works Downtime Recorder",
+			"description": "Plant.Works Downtime Recorder",
+			"keyword": "plantworks"
+		},
+		"openGraph": {
+			"title": "Plant.Works Downtime Recorder",
+			"type": "documentation",
+			"image": "./tenant_assets/www/img/logo.png",
+			"site_name": "Plant.Works Downtime Recorder",
+			"url": "https://plantworks.github.io/downtime-recorder"
+		},
+
+		"scripts": [],
+
+        "sectionOrder": [
+			"Classes",
+			"Modules",
+			"Externals",
+			"Events",
+			"Namespaces",
+			"Mixins",
+			"Tutorials",
+			"Interfaces"
+	   ]
+   }
+}

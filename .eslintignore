@@ -1,0 +1,9 @@
+buildresults/
+config/
+docs/
+generated/
+knex_migrations/
+logs/
+node_modules/
+test/mocha.*
+gruntfile.js
